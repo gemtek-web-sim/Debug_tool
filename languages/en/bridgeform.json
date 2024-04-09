@@ -1,0 +1,5 @@
+{
+    "multibridgeform.helpkey":"multibridge_help_english.html",
+    "bridgeform.headerdescription": "It only supports Add/Remove LAN interfaces. To Add/Remove WAN interfaces, Please go to WAN page of Basic Settings. Please note that any of creating new bridge created will not have DHCP server running on it."
+}
+

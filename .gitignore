@@ -1,2 +1,3 @@
-debug_log/*
-handshake/*
+client_run_debug/debug_log/*
+client_run_debug/handshake/*
+hidden.tar

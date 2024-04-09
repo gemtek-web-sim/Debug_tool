@@ -1,0 +1,15 @@
+{
+
+    "multicast.headername": "Multicast Configuration",
+    "multicast.headerdescription":"This page allows to configure the Multicast services", 
+    "multicast.helpkey":"multicasthelp_english.html",
+    "AdvancedSettings": "AdvancedSettings",
+    "Configuration" : "Configuration",
+    "Device.X_GTK_Mcast.IGMPParameters.FastLeaveStatus": "Fast leave from multicast",
+    "Device.X_GTK_Mcast.IGMPParameters.QueryRespInterval": "Group Query Response Interval",
+    "Device.X_GTK_Mcast.IGMPParameters.LastMemQueryInterval": "Group Last Member Query Interval",
+    "Device.X_GTK_Mcast.IGMPParameters.LastMemQueryCount": "Group Last Member Query Count",
+    "Apply": "Apply",
+    "Reset": "Reset"
+}
+        

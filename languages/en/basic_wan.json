@@ -1,0 +1,8 @@
+{
+    "wan.headerdescription": "This page allows you to view and configure various internet connections such as Static/DHCP/PPPoE etc.",
+    "wan.Actions": "Actions",
+    "Add": "Add",
+    "Cancel": "Cancel",
+    "Apply": "Apply",
+    "Warning!": "Warning!"
+}

@@ -1,0 +1,172 @@
+<div id="devInfoTab">
+  <div class="row no-margin-hr">
+    <!-- Information -->
+    <div class="col-lg-7">
+      <div class="row">
+        <div class="panel no-padding-vr">
+          <div class="text-left gemtek-Device-Status">
+            <span class="ng-binding">Device Status</span>
+          </div>
+          <div class="panel-body no-padding-vr">
+            <div class="row">
+              <table
+                class="table tableCount theme_intel gemtek-two-color-table"
+              >
+                <form
+                  role="form"
+                  id="reportform"
+                  class="ng-pristine ng-valid"
+                ></form>
+                <tbody>
+                  <tr class="gemtek-tr-bottom-line">
+                    <td>WAN Status</td>
+                    <td class="text-right gemtek-text-color">
+                      <span class="ng-binding">
+                        <span class="" id="statusIcon"></span>
+                        <span
+                          class="gemtek-statistics-icon ng-scope"
+                          style="vertical-align: super"
+                          id="statusText"
+                          ></span
+                        >
+                      </span>
+                      <span class="error ng-binding ng-hide"></span>
+                    </td>
+                  </tr>
+                  <tr class="gemtek-tr-bottom-line">
+                    <td>Protocol</td>
+                    <td class="text-right gemtek-text-color">
+                      <span class="ng-binding" id="Protocol"></span>
+                      <span class="error ng-binding ng-hide"></span>
+                    </td>
+                  </tr>
+                  <tr class="gemtek-tr-bottom-line">
+                    <td class="ng-binding">Internet Address</td>
+                    <td class="text-right gemtek-text-color">
+                      <span class="ng-binding" id="InternetAddress"
+                        ></span
+                      >
+                      <span class="error ng-binding ng-hide"></span>
+                    </td>
+                  </tr>
+                  <tr class="gemtek-tr-bottom-line">
+                    <td class="ng-binding">Default Gateway</td>
+                    <td class="text-right gemtek-text-color">
+                      <span class="ng-binding" id="DefaultGateway"
+                        ></span
+                      >
+                      <span class="error ng-binding ng-hide"></span>
+                    </td>
+                  </tr>
+                  <tr class="gemtek-tr-bottom-line">
+                    <td class="ng-binding">Subnet Mask</td>
+                    <td class="text-right gemtek-text-color">
+                      <span class="ng-binding" id="SubnetMask"
+                        ></span
+                      >
+                      <span class="error ng-binding ng-hide"></span>
+                    </td>
+                  </tr>
+                  <tr class="gemtek-tr-bottom-line">
+                    <td class="ng-binding">MacAddress</td>
+                    <td class="text-right gemtek-text-color">
+                      <span class="ng-binding" id="MacAddress"
+                        ></span
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- System Info -->
+    <adv-widget title="System Info" class="ng-isolate-scope">
+      <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 mbl-no-padding-hr">
+        <div class="panel acc">
+          <div class="gemtek-Device-Status">
+            <span class="ng-binding">System Info</span>
+          </div>
+          <div class="panel-body adv_widget no-padding">
+            <ul class="ng-scope">
+              <li class="ng-scope">
+                <label>
+                  <span class="ng-binding">Serial Number</span>
+                  <span class="ng-binding" id="SerialNumber"></span>
+                </label>
+              </li>
+
+              <li class="ng-scope">
+                <label>
+                  <span class="ng-binding">Timestamp</span>
+                  <span class="ng-binding" id="Timestamp"></span>
+                </label>
+              </li>
+
+              <!-- end ngRepeat: key in obj| keys1 track by $index -->
+            </ul>
+            <!-- end ngRepeat: obj in objects track by $index -->
+          </div>
+        </div>
+      </div>
+    </adv-widget>
+  </div>
+  <!-- SSID -->
+  <div class="col-lg-7">
+    <div class="panel">
+      <div class="panel-body">
+        <div class="table-responsive table-scroll-vr">
+          <table
+            class="table tableCount theme_intel"
+            id="DeviceIPInterfaceDeviceIPInterfaceIPv4Address"
+          >
+            <thead class="">
+              <tr>
+                <th id="Name" class="col-xs-2">
+                  <span class="ng-binding">SSID</span>
+                </th>
+
+                <th id="IPAddress" class="col-xs-2">
+                  <span class="ng-binding">Radio</span>
+                </th>
+
+                <th id="IPAddress" class="col-xs-2">
+                  <span class="ng-binding">Security</span>
+                </th>
+              </tr>
+            </thead>
+            <tbody id="bodyData">
+              <template id="wifiElem">
+                <tr class="ng-scope" index="0">
+                  <td class="no-padding-hr ng-scope">
+                    <span class="">
+                      <span class="ng-binding ng-scope SSID"></span>
+                    </span>
+                  </td>
+
+                  <td class="no-padding-hr ng-scope">
+                    <span class=""
+                      ><span class="ng-binding ng-scope Radio"
+                        ></span
+                      ></span
+                    >
+                  </td>
+
+                  <td class="no-padding-hr ng-scope">
+                    <span class=""
+                      ><span class="ng-binding ng-scope Security"
+                        ></span
+                      ></span
+                    >
+                  </td>
+                </tr>
+              </template>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

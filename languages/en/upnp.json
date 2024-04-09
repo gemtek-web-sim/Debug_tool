@@ -1,0 +1,7 @@
+{
+    "upnp.headername": "UPnP Devices",
+    "upnp.headerdescription": "It allows you to enable or disable UPnP service.",
+	"Device.UPnP.Device.*.Enable": "Enable UPnP",
+	"Save": "Save",
+	"Refresh": "Refresh"
+}

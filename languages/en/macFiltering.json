@@ -1,0 +1,11 @@
+{
+    "macFiltering.headername": "Mac Filtering",
+    "macFiltering.headerdescription": "You can make wireless LAN settings that operate in the 2.4GHz range. Wi-Fi 2.4G offers greater coverage and supports legacy devices.",
+    "macFiltering5G.headerdescription": "You can make wireless LAN settings that operate in the 5GHz range. Wi-Fi 5G offers greater coverage and supports legacy devices.",
+    "macFiltering.MAC Address": "MAC Address",
+    "macFiltering.Actions": "Actions",
+    "Add": "Add",
+    "Cancel": "Cancel",
+    "Apply": "Apply",
+    "Warning!": "Warning!"
+}

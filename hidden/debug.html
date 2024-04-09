@@ -1,0 +1,359 @@
+<div id="debugTab">
+  <div class="row no-margin-hr">
+    <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 gemtek-pr-0">
+      <div class="row">
+        <div class="panel no-padding-vr">
+          <div class="panel-body panel-body-vr-20">
+            <div class="form-group no-padding-hr col-xs-12 col-sm-6">
+              <div class="row">
+                <div class="input-field no-padding-hr-l col-xs-12 col-sm-12">
+                  <input
+                    type="text"
+                    id="Timestamp"
+                    pattern="^\d{4}\d{2}\d{2}_\d{2}\d{2}\d{2}$"
+                    class="form-control hidden-dom-removal ng-pristine ng-untouched ng-valid"
+                    placeholder="%y%m%d_%H%M%S"
+                  /><label for="Timestamp" class="active ng-binding"
+                    >Timestamp</label
+                  ><span
+                    class="error ng-binding ng-hide"
+                    id="timestamp_pattern_error"
+                  >
+                    * Please enter timestamp with right format: %y%m%d_%H%M%S
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group no-padding-hr col-xs-12 col-sm-6">
+              <div class="row">
+                <div class="input-field no-padding-hr-l col-xs-12 col-sm-12">
+                  <input
+                    type="text"
+                    id="Pwd"
+                    class="form-control hidden-dom-removal ng-pristine ng-untouched ng-valid"
+                    placeholder="Password to encode output log file"
+                  /><label for="Pwd" class="active ng-binding"
+                    >Encode Password</label
+                  ><span class="error ng-binding ng-hide"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="form-group no-padding-hr col-xs-12 col-sm-12 gemtek-Device-Status ng-binding"
+          >
+            <div
+              class="no-padding-hr col-sm-12 col-md-12 col-lg-12 col-xs-12 text-left"
+            >
+              Debug log Option
+            </div>
+          </div>
+          <div class="panel-body panel-body-vr-20">
+            <div class="form-group no-padding-hr col-xs-12 col-sm-12">
+              <div class="row checkbox-top-align">
+                <div
+                  class="no-padding-hr col-sm-12 col-md-12 col-lg-12 col-xs-12 text-left"
+                >
+                  <div class="checkbox1">
+                    <input
+                      type="checkbox"
+                      class="hidden-dom-removal ng-pristine ng-untouched ng-valid"
+                      id="select_all"
+                      name="select_all"
+                    /><label
+                      class="checkbox1_left_align ng-binding"
+                      for="select_all"
+                      style="font-weight: bold"
+                    >
+                      Select All (Full logs)</label
+                    ><label for="select_all"></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="subOptions" class="">
+              <div class="form-group no-padding-hr col-xs-12 col-sm-6">
+                <div class="row checkbox-top-align">
+                  <div
+                    class="no-padding-hr col-sm-12 col-md-12 col-lg-12 col-xs-12 text-left"
+                  >
+                    <div class="checkbox1">
+                      <input
+                        type="checkbox"
+                        class="hidden-dom-removal ng-pristine ng-untouched ng-valid sOption"
+                        id="version_and_hardware_info"
+                        name="version_and_hardware_info"
+                      /><label
+                        class="checkbox1_left_align"
+                        for="version_and_hardware_info"
+                      >
+                        Version and Hardware Information </label
+                      ><label for="version_and_hardware_info"></label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group no-padding-hr col-xs-12 col-sm-6">
+                <div class="row checkbox-top-align">
+                  <div
+                    class="no-padding-hr col-sm-12 col-md-12 col-lg-12 col-xs-12 text-left"
+                  >
+                    <div class="checkbox1">
+                      <input
+                        type="checkbox"
+                        class="hidden-dom-removal ng-pristine ng-untouched ng-valid sOption"
+                        id="backup_config"
+                        name="backup_config"
+                      /><label class="checkbox1_left_align" for="backup_config"
+                        >Backup Config</label
+                      ><label for="backup_config"></label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group no-padding-hr col-xs-12 col-sm-6">
+                <div class="row checkbox-top-align">
+                  <div
+                    class="no-padding-hr col-sm-12 col-md-12 col-lg-12 col-xs-12 text-left"
+                  >
+                    <div class="checkbox1">
+                      <input
+                        type="checkbox"
+                        class="hidden-dom-removal ng-pristine ng-untouched ng-valid sOption"
+                        id="proc_file"
+                        name="proc_file"
+                      /><label class="checkbox1_left_align" for="proc_file"
+                        >Proc Files</label
+                      ><label for="proc_file"></label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group no-padding-hr col-xs-12 col-sm-6">
+                <div class="row checkbox-top-align">
+                  <div
+                    class="no-padding-hr col-sm-12 col-md-12 col-lg-12 col-xs-12 text-left"
+                  >
+                    <div class="checkbox1">
+                      <input
+                        type="checkbox"
+                        class="hidden-dom-removal ng-pristine ng-untouched ng-valid sOption"
+                        id="cpu_load_and_process"
+                        name="cpu_load_and_process"
+                      /><label
+                        class="checkbox1_left_align"
+                        for="cpu_load_and_process"
+                        >CPU Load and Process</label
+                      ><label for="cpu_load_and_process"></label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group no-padding-hr col-xs-12 col-sm-6">
+                <div class="row checkbox-top-align">
+                  <div
+                    class="no-padding-hr col-sm-12 col-md-12 col-lg-12 col-xs-12 text-left"
+                  >
+                    <div class="checkbox1">
+                      <input
+                        type="checkbox"
+                        class="hidden-dom-removal ng-pristine ng-untouched ng-valid sOption"
+                        id="interface_and_connection"
+                        name="interface_and_connection"
+                      /><label
+                        class="checkbox1_left_align"
+                        for="interface_and_connection"
+                        >Interface and Connection</label
+                      ><label for="interface_and_connection"></label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group no-padding-hr col-xs-12 col-sm-6">
+                <div class="row checkbox-top-align">
+                  <div
+                    class="no-padding-hr col-sm-12 col-md-12 col-lg-12 col-xs-12 text-left"
+                  >
+                    <div class="checkbox1">
+                      <input
+                        type="checkbox"
+                        class="hidden-dom-removal ng-pristine ng-untouched ng-valid sOption"
+                        id="iptables_func"
+                        name="iptables_func"
+                      /><label class="checkbox1_left_align" for="iptables_func"
+                        >Iptables</label
+                      ><label for="iptables_func"></label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group no-padding-hr col-xs-12 col-sm-6">
+                <div class="row checkbox-top-align">
+                  <div
+                    class="no-padding-hr col-sm-12 col-md-12 col-lg-12 col-xs-12 text-left"
+                  >
+                    <div class="checkbox1">
+                      <input
+                        type="checkbox"
+                        class="hidden-dom-removal ng-pristine ng-untouched ng-valid sOption"
+                        id="system_logs"
+                        name="system_logs"
+                      /><label class="checkbox1_left_align" for="system_logs"
+                        >System Logs</label
+                      ><label for="system_logs"></label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group no-padding-hr col-xs-12 col-sm-6">
+                <div class="row checkbox-top-align">
+                  <div
+                    class="no-padding-hr col-sm-12 col-md-12 col-lg-12 col-xs-12 text-left"
+                  >
+                    <div class="checkbox1">
+                      <input
+                        type="checkbox"
+                        class="hidden-dom-removal ng-pristine ng-untouched ng-valid sOption"
+                        id="general_logs"
+                        name="general_logs"
+                      /><label class="checkbox1_left_align" for="general_logs"
+                        >General Logs</label
+                      ><label for="general_logs"></label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group no-padding-hr col-xs-12 col-sm-6">
+                <div class="row checkbox-top-align">
+                  <div
+                    class="no-padding-hr col-sm-12 col-md-12 col-lg-12 col-xs-12 text-left"
+                  >
+                    <div class="checkbox1">
+                      <input
+                        type="checkbox"
+                        class="hidden-dom-removal ng-pristine ng-untouched ng-valid sOption"
+                        id="memory"
+                        name="memory"
+                      /><label class="checkbox1_left_align" for="memory"
+                        >Memory</label
+                      ><label for="memory"></label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group no-padding-hr col-xs-12 col-sm-6">
+                <div class="row checkbox-top-align">
+                  <div
+                    class="no-padding-hr col-sm-12 col-md-12 col-lg-12 col-xs-12 text-left"
+                  >
+                    <div class="checkbox1">
+                      <input
+                        type="checkbox"
+                        class="hidden-dom-removal ng-pristine ng-untouched ng-valid sOption"
+                        id="registers"
+                        name="registers"
+                      /><label class="checkbox1_left_align" for="registers"
+                        >Registers</label
+                      ><label for="registers"></label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group no-padding-hr col-xs-12 col-sm-6">
+                <div class="row checkbox-top-align">
+                  <div
+                    class="no-padding-hr col-sm-12 col-md-12 col-lg-12 col-xs-12 text-left"
+                  >
+                    <div class="checkbox1">
+                      <input
+                        type="checkbox"
+                        class="hidden-dom-removal ng-pristine ng-untouched ng-valid sOption"
+                        id="switch_cli_func"
+                        name="switch_cli_func"
+                      /><label
+                        class="checkbox1_left_align"
+                        for="switch_cli_func"
+                        >Switch CLI</label
+                      ><label for="switch_cli_func"></label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group no-padding-hr col-xs-12 col-sm-6">
+                <div class="row checkbox-top-align">
+                  <div
+                    class="no-padding-hr col-sm-12 col-md-12 col-lg-12 col-xs-12 text-left"
+                  >
+                    <div class="checkbox1">
+                      <input
+                        type="checkbox"
+                        class="hidden-dom-removal ng-pristine ng-untouched ng-valid sOption"
+                        id="ethtool_func"
+                        name="ethtool_func"
+                      /><label class="checkbox1_left_align" for="ethtool_func"
+                        >Ethtool</label
+                      ><label for="ethtool_func"></label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group no-padding-hr col-xs-12 col-sm-6">
+                <div class="row checkbox-top-align">
+                  <div
+                    class="no-padding-hr col-sm-12 col-md-12 col-lg-12 col-xs-12 text-left"
+                  >
+                    <div class="checkbox1">
+                      <input
+                        type="checkbox"
+                        class="hidden-dom-removal ng-pristine ng-untouched ng-valid sOption"
+                        id="wifi_logs"
+                        name="wifi_logs"
+                      /><label class="checkbox1_left_align" for="wifi_logs"
+                        >Wifi Logs</label
+                      ><label for="wifi_logs"></label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="form-group no-padding-hr col-xs-12 col-sm-6">
+                      <a href="google.com">TB-362_000000000000000_20240324_140312.tar.enc</a>
+                      </div> -->
+          </div>
+
+          <div class="text-center gemtek-ptb-20">
+            <div class="btn-align">
+              <input
+                type="button"
+                id="Apply"
+                class="waves-effect waves-light gemtek-btn-primary"
+                value="Run debug log"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 mbl-no-padding-hr">
+      <div class="panel acc">
+        <div class="gemtek-Device-Status">
+          <span class="ng-binding">Debug Logs</span>
+        </div>
+        <div class="panel-body adv_widget no-padding">
+          <ul class="ng-scope" id="logListFile">
+            <template id="logFile">
+              <li class="ng-scope">
+                <label>
+                  <a class="ng-binding fileName" href="" download></a>
+                </label>
+              </li>
+            </template>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
